@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var hotelChoices = $( "#hotel-choices" );
   hotels.forEach(function(hotel){
-    var newHotel = $("<option id='hotel'></option>");
+    var newHotel = $("<option></option>");
     newHotel.html(hotel.name);
     hotelChoices.append(newHotel);
   });
@@ -20,19 +20,25 @@ $(document).ready(function(){
     activityChoices.append(newActivity);
   });
 
-  $("#hotel-choices").change(function(){
-    $("#hotel").addClass("selected");
+  $("#add-hotel").click("button", function(){
+    var choice = $("#hotel-choices").val();
+    $('#hotel-itinerary').html(choice);
+    drawMarker('hotel', hotels[choice].place.location);
   });
 
-  $("#add-hotel").click("button", function(){
-    var choice = $(".selected")
+  $("#add-resto").click("button", function(){
+    var choice = $("#restaurant-choices").val();
+    var newResto = $('<p></p>');
+    newResto.html(choice);
+    $('#resto-itinerary').append(newResto);
+    drawMarker('restaurant', choice.place.location);
   });
-  //
-  // $("#add-resto").on('click', function(){
-  //
-  // });
-  //
-  // $("#add-hotel").on('click', function(){
-  //
-  // });
+
+  $("#add-activity").click("button", function(){
+    var choice = $("#activity-choices").val();
+    var newActivity = $('<p></p>');
+    newActivity.html(choice);
+    $('#activity-itinerary').append(newActivity);
+    drawMarker('activity', choice.place.location);
+  });
 });

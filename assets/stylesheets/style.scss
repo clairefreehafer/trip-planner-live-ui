@@ -6,7 +6,7 @@ $screen-sm: 768px;
 
 body {
   padding-top: 50px;
-  background: lighten($medium-brown, 32%);
+  background: #24282b;
   font-family: 'Varela Round', sans-serif;
   min-width: -webkit-min-content;
 }
@@ -18,14 +18,14 @@ body {
 
 .navbar-inverse {
   background: $medium-brown;
-  border-color: darken($medium-brown, 10%);
+  border-color: #24282b;
   .navbar-toggle .icon-bar {
-    background-color: $light-blue;
+    background-color: #7f8689;
   }
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
-  color: $light-blue;
+  color: #7f8689;
 }
 
 .navbar-inverse .navbar-brand {
@@ -43,11 +43,11 @@ body {
 
 .navbar-inverse .navbar-nav > .active > a {
   box-shadow: inset 0 0 10px darken($medium-brown, 15%);
-  background: darken($medium-brown, 5%);
+  background: #24282b;
   color: lighten($light-blue, 10%);
   &:hover {
-    background: darken($medium-brown, 10%);
-    box-shadow: inset 0 0 10px darken($medium-brown, 20%);
+    background: #24282b;
+    box-shadow: inset 0 0 10px darken(#24282b, 20%);
     color: #fff;
   }
 }
@@ -142,12 +142,12 @@ h3 {
 
 
 .panel-default {
-  background: lighten($medium-brown, 53%);
+  background: #4d6059;
   border-radius: 8px;
   border-width: 0;
   margin-bottom: 0;
   .panel-heading {
-    background: $medium-brown;
+    background: #2f2f2f;
     border-radius: 8px 8px 0 0;
   }
   .panel-body {

@@ -1,31 +1,33 @@
-$light-blue: #a8c9dd;
-$medium-brown: #736357;
+$shark: #24228b;
+$green: #466059;
+$oslo: #7F8D89;
+$black: #232323;
 $transparent: rgba(0,0,0,0);
 
 $screen-sm: 768px;
 
 body {
   padding-top: 50px;
-  background: #24282b;
+  background: $shark;
   font-family: 'Varela Round', sans-serif;
   min-width: -webkit-min-content;
 }
 
 #app {
-  border-left: 2px solid lighten($medium-brown, 25%);
-  border-right: 2px solid lighten($medium-brown, 25%);
+  border-left: 2px solid lighten($shark, 25%);
+  border-right: 2px solid lighten($shark, 25%);
 }
 
 .navbar-inverse {
-  background: $medium-brown;
-  border-color: #24282b;
+  background: #fff;
+  border-color: $black;
   .navbar-toggle .icon-bar {
     background-color: #7f8689;
   }
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-inverse .navbar-brand {
-  color: #7f8689;
+  color: $oslo;
 }
 
 .navbar-inverse .navbar-brand {
@@ -42,21 +44,21 @@ body {
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-  box-shadow: inset 0 0 10px darken($medium-brown, 15%);
-  background: #24282b;
-  color: lighten($light-blue, 10%);
+  box-shadow: inset 0 0 10px #fff;
+  background: #fff;
+  color: #ddd;
   &:hover {
     background: #24282b;
-    box-shadow: inset 0 0 10px darken(#24282b, 20%);
+    box-shadow: inset 0 0 10px darken($shark, 20%);
     color: #fff;
   }
 }
 
 #map-canvas {
   height: calc(100vh - 50px);
-  border-right: 2px solid lighten($medium-brown, 25%);
-  border-bottom: 2px solid lighten($medium-brown, 25%);
-  border-left: 2px solid lighten($medium-brown, 25%);
+  border-right: 2px solid lighten($shark, 25%);
+  border-bottom: 2px solid lighten($shark, 25%);
+  border-left: 2px solid lighten($shark, 25%);
   width:100%;
 }
 
@@ -77,6 +79,8 @@ body {
 #control-panel {
   padding: 0;
   box-sizing: border-box;
+  background-color: $black;
+  color: #fff;
   > div {
     margin: 20px 0;
     min-width: -webkit-min-content;
@@ -89,11 +93,11 @@ select {
 }
 
 .btn-primary {
-  background: darken($light-blue, 20%);
-  border-color: darken($light-blue, 22%);
+  background: $oslo;
+  border-color: darken($oslo, 22%);
   &:hover {
-    background: darken($light-blue, 30%);
-    border-color: darken($light-blue, 32%);
+    background: darken($green, 30%);
+    border-color: darken($green, 32%);
   }
 }
 
@@ -103,7 +107,7 @@ h4 {
 }
 
 h3 {
-  color: darken($medium-brown, 5%);
+  color: $oslo;
   text-align: center;
   margin-top: 0;
 }
@@ -124,15 +128,15 @@ h3 {
   height: 30px;
   padding: 5px 5px;
   background: $transparent;
-  border-color: $light-blue;
-  color: $light-blue;
+  border-color: $oslo;
+  color: $oslo;
   &:hover {
     border-color: #fff;
     color: #fff;
   }
   &.current-day {
-    background: $light-blue;
-    color: $medium-brown;
+    background: $oslo;
+    color: $shark;
     &:hover {
       background: #fff;
     }
@@ -142,12 +146,12 @@ h3 {
 
 
 .panel-default {
-  background: #4d6059;
+  background: $green;
   border-radius: 8px;
   border-width: 0;
   margin-bottom: 0;
   .panel-heading {
-    background: #2f2f2f;
+    background: $black;
     border-radius: 8px 8px 0 0;
   }
   .panel-body {
@@ -176,7 +180,7 @@ h3 {
 #day-title {
   display: inline-block;
   padding: 5px;
-  border: 1px solid $medium-brown;
+  border: 1px solid $shark;
   border-radius: 5px;
   > * {
     display: inline-block;

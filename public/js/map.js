@@ -82,251 +82,169 @@ $(function initializeMap (){
         'stylers': [{
                 'color': '#4d6059'
             }]
-    },
-    {
+    },{
         'featureType': 'landscape.natural',
         'elementType': 'geometry.fill',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#4d6059'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'poi',
         'elementType': 'geometry',
-        'stylers': [
-            {
+        'stylers': [{
                 'lightness': 21
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'poi',
         'elementType': 'geometry.fill',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#4d6059'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'poi',
         'elementType': 'geometry.stroke',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#4d6059'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'road',
         'elementType': 'geometry',
-        'stylers': [
-            {
+        'stylers': [{
                 'visibility': 'on'
-            },
-            {
+            },{
                 'color': '#7f8d89'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'road',
         'elementType': 'geometry.fill',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#7f8d89'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'road.highway',
         'elementType': 'geometry.fill',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#7f8d89'
-            },
-            {
+            },{
                 'lightness': 17
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'road.highway',
         'elementType': 'geometry.stroke',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#7f8d89'
-            },
-            {
+            },{
                 'lightness': 29
-            },
-            {
+            },{
                 'weight': 0.2
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'road.arterial',
         'elementType': 'geometry',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#000000'
-            },
-            {
+            },{
                 'lightness': 18
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'road.arterial',
         'elementType': 'geometry.fill',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#7f8d89'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'road.arterial',
         'elementType': 'geometry.stroke',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#7f8d89'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'road.local',
         'elementType': 'geometry',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#000000'
-            },
-            {
+            },{
                 'lightness': 16
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'road.local',
         'elementType': 'geometry.fill',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#7f8d89'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'road.local',
         'elementType': 'geometry.stroke',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#7f8d89'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'transit',
         'elementType': 'geometry',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#000000'
-            },
-            {
+            },{
                 'lightness': 19
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'water',
         'elementType': 'all',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#2b3638'
-            },
-            {
+            },{
                 'visibility': 'on'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'water',
         'elementType': 'geometry',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#2b3638'
-            },
-            {
+            },{
                 'lightness': 17
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'water',
         'elementType': 'geometry.fill',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#24282b'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'water',
         'elementType': 'geometry.stroke',
-        'stylers': [
-            {
+        'stylers': [{
                 'color': '#24282b'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'water',
         'elementType': 'labels',
-        'stylers': [
-            {
+        'stylers': [{
                 'visibility': 'off'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'water',
         'elementType': 'labels.text',
-        'stylers': [
-            {
+        'stylers': [{
                 'visibility': 'off'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'water',
         'elementType': 'labels.text.fill',
-        'stylers': [
-            {
+        'stylers': [{
                 'visibility': 'off'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'water',
         'elementType': 'labels.text.stroke',
-        'stylers': [
-            {
+        'stylers': [{
                 'visibility': 'off'
-            }
-        ]
-    },
-    {
+            }]
+    },{
         'featureType': 'water',
         'elementType': 'labels.icon',
-        'stylers': [
-            {
+        'stylers': [{
                 'visibility': 'off'
-            }
-        ]
-    }
-]
+            }]
+    }]
 
   var mapCanvas = document.getElementById('map-canvas');
 

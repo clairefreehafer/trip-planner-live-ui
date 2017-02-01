@@ -22,23 +22,82 @@ $(document).ready(function(){
 
   $("#add-hotel").click("button", function(){
     var choice = $("#hotel-choices").val();
-    $('#hotel-itinerary').html(choice);
-    drawMarker('hotel', hotels[choice].place.location);
+    var newHotel = $('<p></p>');
+    $('#hotel-itinerary').html(newHotel)
+    newHotel.html(choice + '<button class="btn btn-xs remove btn-circle" style="float:right">x</button>');
+
+    $('.remove').click(function() {
+      $(this).parent().remove();
+
+
+      marker.setMap(null)
+    })
+
+    hotels.forEach(function(hotel) {
+      if (choice === hotel.name) {
+        drawMarker('hotel', hotel.place.location, hotel.name);
+      }
+    });
   });
 
   $("#add-resto").click("button", function(){
     var choice = $("#restaurant-choices").val();
     var newResto = $('<p></p>');
-    newResto.html(choice);
+    newResto.html(choice + '<button class="btn btn-xs remove btn-circle" style="float:right">x</button>');
     $('#resto-itinerary').append(newResto);
-    drawMarker('restaurant', choice.place.location);
+
+    $('.remove').click(function() {
+      $(this).parent().remove();
+
+
+      marker.setMap(null)
+    })
+
+    restaurants.forEach(function(restaurant) {
+      if (choice === restaurant.name) {
+        drawMarker('restaurant', restaurant.place.location, restaurant.name);
+      }
+    });
   });
 
   $("#add-activity").click("button", function(){
     var choice = $("#activity-choices").val();
     var newActivity = $('<p></p>');
-    newActivity.html(choice);
+    newActivity.html(choice + '<button class="btn btn-xs remove btn-circle" style="float:right">x</button>');
     $('#activity-itinerary').append(newActivity);
-    drawMarker('activity', choice.place.location);
+
+    $('.remove').click(function() {
+      var activityName = $(this).parent()[0].innerText.slice(0, -1);
+
+      currentMarkers.forEach(function(marker) {
+        if (marker.title === activityName) {
+          marker.setMap(null);
+        }
+      })
+
+      $(this).parent().remove();
+
+      marker.setMap(null)
+    })
+
+    activities.forEach(function(activity) {
+      if (choice === activity.name) {
+        drawMarker('activity', activity.place.location, activity.name);
+      }
+    });
   });
+
+  // $('.list-group').click('button', function() {
+  //   $(this).find('p').remove();
+  //   console.log();
+
+  //   marker.setMap(null)
+  // })
+
+  // $('.remove').click(function() {
+  //   // $(this).find('p').remove();
+  //   console.log(this);
+
+  //   // marker.setMap(null)
+  // })
 });

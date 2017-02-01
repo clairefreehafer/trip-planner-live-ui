@@ -1,12 +1,12 @@
 body {
   padding-top: 50px;
-  background: #24228b;
+  background: #24282b;
   font-family: 'Varela Round', sans-serif;
   min-width: -webkit-min-content; }
 
 #app {
-  border-left: 2px solid #5957d6;
-  border-right: 2px solid #5957d6; }
+  border-left: 2px solid #5e6970;
+  border-right: 2px solid #5e6970; }
 
 .navbar-inverse {
   background: #fff;
@@ -33,14 +33,14 @@ body {
   color: #ddd; }
   .navbar-inverse .navbar-nav > .active > a:hover {
     background: #24282b;
-    box-shadow: inset 0 0 10px #0f0e39;
+    box-shadow: inset 0 0 10px black;
     color: #fff; }
 
 #map-canvas {
   height: calc(100vh - 50px);
-  border-right: 2px solid #5957d6;
-  border-bottom: 2px solid #5957d6;
-  border-left: 2px solid #5957d6;
+  border-right: 2px solid #5e6970;
+  border-bottom: 2px solid #5e6970;
+  border-left: 2px solid #5e6970;
   width: 100%; }
 
 @media (min-width: 768px) {
@@ -104,7 +104,7 @@ h3 {
     color: #fff; }
   .day-btn.current-day {
     background: #7F8D89;
-    color: #24228b; }
+    color: #24282b; }
     .day-btn.current-day:hover {
       background: #fff; }
 
@@ -135,7 +135,7 @@ h3 {
 #day-title {
   display: inline-block;
   padding: 5px;
-  border: 1px solid #24228b;
+  border: 1px solid #24282b;
   border-radius: 5px; }
   #day-title > * {
     display: inline-block;
